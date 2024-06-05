@@ -14,6 +14,9 @@
 		A364B11A2C11113600703701 /* AltimetrikTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364B1192C11113600703701 /* AltimetrikTestTests.swift */; };
 		A364B1242C11113600703701 /* AltimetrikTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364B1232C11113600703701 /* AltimetrikTestUITests.swift */; };
 		A364B1262C11113600703701 /* AltimetrikTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364B1252C11113600703701 /* AltimetrikTestUITestsLaunchTests.swift */; };
+		A364B1342C1111DC00703701 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364B1332C1111DC00703701 /* PhotoModel.swift */; };
+		A364B1372C11123900703701 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364B1362C11123900703701 /* Network.swift */; };
+		A364B13A2C11148800703701 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364B1392C11148800703701 /* PhotoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A364B11F2C11113600703701 /* AltimetrikTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AltimetrikTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A364B1232C11113600703701 /* AltimetrikTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimetrikTestUITests.swift; sourceTree = "<group>"; };
 		A364B1252C11113600703701 /* AltimetrikTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimetrikTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A364B1332C1111DC00703701 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		A364B1362C11123900703701 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A364B1392C11148800703701 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		A364B1072C11113400703701 /* AltimetrikTest */ = {
 			isa = PBXGroup;
 			children = (
+				A364B1382C11147B00703701 /* ViewModel */,
+				A364B1352C11122800703701 /* Network */,
+				A364B1322C1111CC00703701 /* Model */,
 				A364B1082C11113400703701 /* AltimetrikTestApp.swift */,
 				A364B10A2C11113400703701 /* ContentView.swift */,
 				A364B10C2C11113600703701 /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				A364B1252C11113600703701 /* AltimetrikTestUITestsLaunchTests.swift */,
 			);
 			path = AltimetrikTestUITests;
+			sourceTree = "<group>";
+		};
+		A364B1322C1111CC00703701 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A364B1332C1111DC00703701 /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A364B1352C11122800703701 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A364B1362C11123900703701 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A364B1382C11147B00703701 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A364B1392C11148800703701 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A364B1342C1111DC00703701 /* PhotoModel.swift in Sources */,
 				A364B10B2C11113400703701 /* ContentView.swift in Sources */,
+				A364B1372C11123900703701 /* Network.swift in Sources */,
 				A364B1092C11113400703701 /* AltimetrikTestApp.swift in Sources */,
+				A364B13A2C11148800703701 /* PhotoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,19 +6,42 @@
 //
 
 import SwiftUI
+import UIKit.UIImage
 
 struct ContentView: View {
+    let network = Network()
+    @ObservedObject var viewModel: PhotoViewModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                //
+                viewModel.getPhotosObjects {
+                    viewModel.getImage()
+                }
+            } label: {
+                Text("Get Image from API")
+            }
+            
+            if let newImage = viewModel.image {
+                Image(uiImage: newImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.top, 20)
+            } else {
+                Image(systemName: "nosign.app.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.top, 20)
+            }
+            
+            Text(viewModel.title)
+            Text(viewModel.errorMessage)
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}
